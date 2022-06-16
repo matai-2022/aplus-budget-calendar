@@ -1,4 +1,5 @@
 import React from 'react'
+import sumDaily from '../sumDaily'
 
 import CalendarDay from './CalendarDay'
 
