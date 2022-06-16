@@ -5,6 +5,7 @@ function CalendarDay({day, balance}) {
     <a href='' className='calendar-day'>
       <div className='day-name'>{day}</div>
       <div className='day-balance'>{balance}</div>
+      <div class="day-total">+ 100.01</div>
     </a>
   )
 }

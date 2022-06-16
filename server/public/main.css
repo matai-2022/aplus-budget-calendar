@@ -139,6 +139,13 @@ a:visited {
   font-size: 24px;
 }
 
+.day-total {
+  flex: 0 0 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .in-the-red {
   color: red;
 }
