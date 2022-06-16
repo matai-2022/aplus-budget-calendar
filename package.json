@@ -1,6 +1,6 @@
 {
   "name": "aplus-budget-calendar",
-  "version": "1.0",
+  "version": "1.0.0",
   "description": "Track your budget visually",
   "repository": "https://github.com/matai-2022/aplus-budget-calendar.git",
   "main": "server/index.js",
