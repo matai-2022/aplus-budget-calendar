@@ -14,6 +14,7 @@ function App() {
       <div className="contents">
         <Routes>
           <Route path="/" element={<Calendar />} />
+          {/* PROPS: 'balance' from yesterday, 'transactions' & day's running 'balance'  */}
           <Route path="/detail/:id" element={<Detail />} />
           {/* Changed add path from '/detail/:id/add' to '/add' because it doesn't make sense when accessing from HeaderNav*/}
           <Route path="/add" element={<Add />} />
