@@ -3,6 +3,8 @@ import sumDaily from '../sumDaily'
 
 import CalendarDay from './CalendarDay'
 
+import budget from '../../data/budget'
+
 function Calendar() {
   return (
     <>
