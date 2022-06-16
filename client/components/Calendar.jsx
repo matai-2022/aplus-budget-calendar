@@ -2,6 +2,7 @@ import React from 'react'
 import sumDaily from '../sumDaily'
 import CalendarDay from './CalendarDay'
 import budget from '../../data/budget'
+import formatter from '../formatter'
 
 const initialBalance = 500
 
@@ -21,19 +22,20 @@ function Calendar() {
   }
 }
   calcBalance(initialBalance, budget)
-  
+
+
   console.log (findTrans (1))
   return (
     <>
     <div className='start-balance'>Starting balance: ${initialBalance}</div>
     <div className='calendar'>
-      <CalendarDay day='Monday' balance= {findTrans(1).balance} total= {findTrans(1).total}/>
-      <CalendarDay day='Tuesday' balance={findTrans(2).balance} total= {findTrans(2).total}/>
-      <CalendarDay day='Wednesday' balance={findTrans(3).balance} total= {findTrans(3).total}/>
-      <CalendarDay day='Thursday' balance={findTrans(4).balance} total= {findTrans(4).total}/>
-      <CalendarDay day='Friday' balance={findTrans(5).balance} total= {findTrans(5).total}/>
-      <CalendarDay day='Saturday' balance={findTrans(6).balance} total= {findTrans(6).total}/>
-      <CalendarDay day='Sunday' balance={findTrans(7).balance} total= {findTrans(7).total}/>
+      <CalendarDay day='Monday' balance= {formatter(findTrans(1).balance)} total= {formatter(findTrans(1).total)} />
+      <CalendarDay day='Tuesday' balance={formatter(findTrans(2).balance)} total= {formatter(findTrans(2).total)}/>
+      <CalendarDay day='Wednesday' balance={formatter(findTrans(3).balance)} total= {formatter(findTrans(3).total)}/>
+      <CalendarDay day='Thursday' balance={formatter(findTrans(4).balance)} total= {formatter(findTrans(4).total)}/>
+      <CalendarDay day='Friday' balance={formatter(findTrans(5).balance)} total= {formatter(findTrans(5).total)}/>
+      <CalendarDay day='Saturday' balance={formatter(findTrans(6).balance)} total= {formatter(findTrans(6).total)}/>
+      <CalendarDay day='Sunday' balance={formatter(findTrans(7).balance)} total= {formatter(findTrans(7).total)}/>
     </div>
     </>
   )
