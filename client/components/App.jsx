@@ -1,20 +1,19 @@
 import React from 'react'
 import {Routes, Route} from 'react-router-dom'
 
-import Nav from './Nav'
+import HeaderNav from './HeaderNav'
+import Calendar from './Calendar'
 
 function App() {
   return (
     <>
-    <div className="title">
-      <h1>A+ Budget Calendar</h1>
+    <HeaderNav />
+    <div className='contents'>
+    <Routes>
+      <Route path='/' element={<Calendar />} />
+    </Routes>
     </div>
-    {/* This 'main' div is only for styling (so we can use flexbox) */}
-    <div className="main">
-      <Nav />
-      <Routes>
-      </Routes>
-    </div>
+    <div className='footer'>&copy; Team Ponyo 2022</div>
     </>
   )
 }

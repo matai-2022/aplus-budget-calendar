@@ -1,0 +1,146 @@
+/* Global and generic styles */
+
+body {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+}
+
+#app {
+  margin: 10px;
+  display: grid;
+  grid-template-areas:
+    "hd"
+    "ct"
+    "ft";
+}
+
+.box-shadow {
+  box-shadow: 
+  0 2px 2px 0 rgba(0,0,0,.14),
+  0 3px 1px -2px rgba(0,0,0,.2),
+  0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #000;
+}
+
+/* Header and navigation */
+
+.header-row {
+  grid-area: hd;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  height: 64px;
+  padding: 0 40px 0 80px;
+  background-color: #f48fb1;
+}
+
+.title {
+  flex: 0 0 auto;
+  font-size: 20px;
+  letter-spacing: .02em;
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
+.navigation {
+  flex: 0 0 auto;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.navigation-link {
+  display: block;
+  padding: 0 24px;
+  letter-spacing: 0;
+  line-height: 64px;
+  opacity: 0.87;
+}
+
+.navigation-link:visited {
+  color: #000;
+}
+
+.navigation-link:hover {
+  background-color: #bf5f82;
+  color: #fff;
+}
+
+/* Content */
+
+.contents {
+  grid-area: ct;
+  background-color: #F5F5F6;
+  padding: 32px 16px;
+}
+
+/* Footer */
+
+.footer {
+  grid-area: ft;
+  padding: 16px;
+  background-color: #F5F5F6;
+}
+
+/* Calendar view */
+
+.start-balance {
+  text-align: center;
+  margin: 0 auto 24px;
+  font-size: 16px;
+}
+
+.calendar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.calendar-day {
+  flex: 1 0 100px;
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+  margin: 0 5px;
+  background-color: #fff;
+}
+
+.calendar-day:hover {
+  box-shadow: 
+  0 2px 2px 0 rgba(0,0,0,.14),
+  0 3px 1px -2px rgba(0,0,0,.2),
+  0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.day-name {
+  flex: 0 0 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f48fb1;
+  font-size: 16px;
+  border: 1px solid black;
+}
+
+.day-balance {
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  border: 1px solid black;
+}
+
+.in-the-red {
+  color: red;
+}
