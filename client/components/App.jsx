@@ -15,7 +15,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Calendar />} />
           <Route path="/detail/:id" element={<Detail />} />
-          <Route path="/detail/:id/add" element={<Add />} />
+          {/* Changed add path from '/detail/:id/add' to '/add' because it doesn't make sense when accessing from HeaderNav*/}
+          <Route path="/add" element={<Add />} />
           <Route path="/detail/:id/edit" element={<Edit />} />
         </Routes>
       </div>
