@@ -4,7 +4,8 @@ import CalendarDay from './CalendarDay'
 import budget from '../../data/budget'
 import formatter from '../formatter'
 
-const initialBalance = 500
+
+let initialBalance = 500
 
 function Calendar() {
   function findTrans (Num) {
@@ -27,7 +28,7 @@ function Calendar() {
   console.log (findTrans (1))
   return (
     <>
-    <div className='start-balance'>Starting balance: ${initialBalance}</div>
+    <div className='start-balance'>Starting balance: ${initialBalance.toFixed(2)}</div>
     <div className='calendar'>
       <CalendarDay day='Monday' balance= {formatter(findTrans(1).balance)} total= {formatter(findTrans(1).total)} />
       <CalendarDay day='Tuesday' balance={formatter(findTrans(2).balance)} total= {formatter(findTrans(2).total)}/>

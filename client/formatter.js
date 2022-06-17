@@ -6,7 +6,7 @@ function formatter(number) {
   } else {
     sign = '$'
   }
-  return sign + absNum
+  return sign + absNum.toFixed(2)
 }
 
 export default formatter
