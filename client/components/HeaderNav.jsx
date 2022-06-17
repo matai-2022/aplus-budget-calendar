@@ -4,7 +4,9 @@ import { Link } from 'react-router-dom'
 function HeaderNav() {
   return (
     <div className="header-row">
-      <span className="title">A+ Budget Calendar</span>
+      <Link to="/">
+        <span className="title">A+ Budget Calendar</span>
+      </Link>
       <div className="spacer"></div>
       <nav className="navigation">
         <Link to="/" className="navigation-link">
