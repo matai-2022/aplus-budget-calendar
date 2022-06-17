@@ -149,3 +149,9 @@ a:visited {
 .in-the-red {
   color: red;
 }
+
+/* Detail view */
+
+.detail-item-table {
+  color: #fff;
+}
