@@ -5,12 +5,15 @@ import CalendarDay from './CalendarDay'
 
 import budget from '../../data/budget'
 
+
+
 function Calendar() {
+  console.log(budget)
   return (
     <>
     <div className='start-balance'>Starting balance: $0.00</div>
     <div className='calendar'>
-      <CalendarDay day='Monday' balance='$100.50'/>
+      <CalendarDay day='Monday'  balance='$100.50'/>
       <CalendarDay day='Tuesday' balance='-$300.20'/>
       <CalendarDay day='Wednesday' balance='-$250.00'/>
       <CalendarDay day='Thursday' balance='$100.00'/>
