@@ -21,6 +21,8 @@ function Calendar() {
       budget[i].total = sumDaily(budget[i].transactions)
       budget[i].balance = budget[i-1].balance + budget[i].total
   }
+
+
 }
   calcBalance(initialBalance, budget)
 
