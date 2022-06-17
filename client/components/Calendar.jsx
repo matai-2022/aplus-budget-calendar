@@ -7,6 +7,8 @@ import balFormatter from '../balFormatter'
 
 let initialBalance = 500
 
+
+
 function Calendar() {
   function findTrans(Num) {
     return budget.find((item) => item.id === Num)
