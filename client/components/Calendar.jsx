@@ -3,8 +3,11 @@ import sumDaily from '../sumDaily'
 import CalendarDay from './CalendarDay'
 import budget from '../../data/budget'
 import formatter from '../formatter'
+import balFormatter from '../balFormatter'
 
 let initialBalance = 500
+
+
 
 function Calendar() {
   function findTrans(Num) {
@@ -31,43 +34,43 @@ function Calendar() {
         <CalendarDay
           id={1}
           day="Monday"
-          balance={formatter(findTrans(1).balance)}
+          balance={balFormatter(findTrans(1).balance)}
           total={formatter(findTrans(1).total)}
         />
         <CalendarDay
           id={2}
           day="Tuesday"
-          balance={formatter(findTrans(2).balance)}
+          balance={balFormatter(findTrans(2).balance)}
           total={formatter(findTrans(2).total)}
         />
         <CalendarDay
           id={3}
           day="Wednesday"
-          balance={formatter(findTrans(3).balance)}
+          balance={balFormatter(findTrans(3).balance)}
           total={formatter(findTrans(3).total)}
         />
         <CalendarDay
           id={4}
           day="Thursday"
-          balance={formatter(findTrans(4).balance)}
+          balance={balFormatter(findTrans(4).balance)}
           total={formatter(findTrans(4).total)}
         />
         <CalendarDay
           id={5}
           day="Friday"
-          balance={formatter(findTrans(5).balance)}
+          balance={balFormatter(findTrans(5).balance)}
           total={formatter(findTrans(5).total)}
         />
         <CalendarDay
           id={6}
           day="Saturday"
-          balance={formatter(findTrans(6).balance)}
+          balance={balFormatter(findTrans(6).balance)}
           total={formatter(findTrans(6).total)}
         />
         <CalendarDay
           id={7}
           day="Sunday"
-          balance={formatter(findTrans(7).balance)}
+          balance={balFormatter(findTrans(7).balance)}
           total={formatter(findTrans(7).total)}
         />
       </div>

@@ -13,6 +13,22 @@ function App() {
   // looking at whole budget object because may need to compare id's to find the day's info
   const [budget1, setBudget] = useState(budget)
 
+  function findTrans (num, obj) {
+    return (
+   obj.find(item => item.id === num))
+  
+  }
+
+  function setForm(newItem, day){
+   
+   const tempBudget =[...budget1]
+   let tempDay = findTrans(Number(day),tempBudget)
+   console.log(tempDay)
+   tempDay.transactions = [...day.transactions, newItem]
+  setBudget(tempBudget)
+   
+  }
+
   return (
     <>
       <HeaderNav />
@@ -22,7 +38,7 @@ function App() {
           {/* PROPS: budget  */}
           <Route path="/detail/:id" element={<Detail budget={budget1} />} />
           {/* Changed add path from '/detail/:id/add' to '/add' because it doesn't make sense when accessing from HeaderNav*/}
-          <Route path="/add" element={<Add />} />
+          <Route path="/add" element={<Add setForm={setForm}/>} />
           <Route path="/detail/:id/edit" element={<Edit />} />
         </Routes>
       </div>
