@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, useParams } from 'react-router-dom'
 
 import formatter from '../formatter'
+import balFormatter from '../balFormatter'
 
 function Detail({ budget }) {
   const { id } = useParams()
@@ -31,7 +32,7 @@ function Detail({ budget }) {
         <tbody>
           <tr>
             <td>Balance</td>
-            <td>{formatter(balance)}</td>
+            <td>{balFormatter(balance)}</td>
             <td></td>
             <td></td>
           </tr>

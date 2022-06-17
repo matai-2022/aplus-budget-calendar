@@ -151,6 +151,10 @@ a:visited {
   color: red;
 }
 
+.in-the-green {
+  color: green;
+}
+
 /* Detail view */
 
 .detail-day-name {
