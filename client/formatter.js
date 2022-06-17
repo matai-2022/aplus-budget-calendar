@@ -7,7 +7,7 @@ function formatter(number) {
     sign = '-$'
     return <p className="in-the-red">{sign + absNum.toFixed(2)}</p>
   } else {
-    sign = '+$'
+    sign = '$'
     return <p className="in-the-green">{sign + absNum.toFixed(2)}</p>
   }
 }
