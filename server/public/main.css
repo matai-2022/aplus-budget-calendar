@@ -204,7 +204,26 @@ a:visited {
   font-weight: 700;
 }
 
-.detail-button {
-  background-color: #E1E2E1;
-  border-style: none;
+/* Add item view */
+
+.form label {
+  display: inline-block;
+  width: 100px;
+}
+
+.form-group {
+  width: 100%;
+  margin: 20px 0;
+  background: none;
+  border: none;
+  line-height: 1.6;
+  box-shadow: none;
+}
+
+.form select,input {
+  width: 200px;
+  height: 30px;
+  background: #fff;
+  border: none;
+  box-shadow: none;
 }
