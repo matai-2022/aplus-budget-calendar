@@ -24,6 +24,7 @@ body {
 }
 
 a {
+  color: #000;
   text-decoration: none;
 }
 
@@ -152,6 +153,58 @@ a:visited {
 
 /* Detail view */
 
+.detail-day-name {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
 .detail-item-table {
-  color: #fff;
+  width: max-content;
+  border-collapse: collapse;
+  font-size: 13px;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: minmax(200px, auto) minmax(50px, 1fr) minmax(50px, 1fr) minmax(50px, 1fr);
+}
+
+.detail-item-table colgroup, thead, tbody, tfoot, tr {
+  display:contents
+}
+
+.detail-item-table thead {
+  padding-bottom: 3px;
+}
+
+.detail-item-table th {
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0;
+  height: 48px;
+  font-size: 12px;
+  color: rgba(0,0,0,.54);
+  padding: 0 18px 12px 18px;
+  box-sizing: border-box;
+}
+
+.detail-item-table td {
+  height: 48px;
+  border-top: 1px solid rgba(0,0,0,.12);
+  border-bottom: 1px solid rgba(0,0,0,.12);
+  padding: 12px 18px;
+  box-sizing: border-box;
+  vertical-align: bottom;
+}
+
+.detail-item-table tfoot {
+  height: 48px;
+  border-top: 1px solid rgba(0,0,0,.12);
+  border-bottom: 1px solid rgba(0,0,0,.12);
+  padding: 12px 18px;
+  font-weight: 700;
+}
+
+.detail-button {
+  background-color: #E1E2E1;
+  border-style: none;
 }
