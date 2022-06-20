@@ -4,10 +4,25 @@ import CalendarDay from './CalendarDay'
 import budget from '../../data/budget'
 import formatter from '../formatter'
 import balFormatter from '../balFormatter'
+import styled from 'styled-components'
+
+// Styled components
+
+const StartBalance = styled.div`
+  text-align: center;
+  margin: 0 auto 24px;
+  font-size: 20px;
+  font-weight:bolder;
+`
+
+const CalendarWrapper = styled.div`
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+`
+// Main component
 
 let initialBalance = 500
-
-
 
 function Calendar() {
   function findTrans(Num) {
@@ -27,10 +42,10 @@ function Calendar() {
   console.log(findTrans(1))
   return (
     <>
-      <div className="start-balance">
+      <StartBalance>
         Starting balance: ${initialBalance.toFixed(2)}
-      </div>
-      <div className="calendar">
+      </StartBalance>
+      <CalendarWrapper>
         <CalendarDay
           id={1}
           day="Monday"
@@ -73,7 +88,7 @@ function Calendar() {
           balance={balFormatter(findTrans(7).balance)}
           total={formatter(findTrans(7).total)}
         />
-      </div>
+      </CalendarWrapper>
     </>
   )
 }
