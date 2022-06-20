@@ -151,30 +151,6 @@ button {
   0 1px 5px 0 rgba(0,0,0,.12);
 }
 
-.day-name {
-  flex: 0 0 64px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f48fb1;
-  font-size: 16px;
-}
-
-.day-balance {
-  flex: 1 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
-}
-
-.day-total {
-  flex: 0 0 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .in-the-red {
   color: red;
 }
